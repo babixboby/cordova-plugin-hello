@@ -32,10 +32,10 @@ public class Hello extends CordovaPlugin {
     }
 
     private void openNewActivity(Context context) {
-        //Intent intent = new Intent(context, NewActivity.class);
-        //this.cordova.getActivity().startActivity(intent);
-        Intent intent = new Intent(context, GameActivity.class);
-        intent.putExtra(EXTRA_IS_SPEED_MODE, false);
+        Intent intent = new Intent(context, MainActivity.class);
         this.cordova.getActivity().startActivity(intent);
+       // Intent intent = new Intent(context, GameActivity.class);
+       // intent.putExtra(EXTRA_IS_SPEED_MODE, false);
+        //this.cordova.getActivity().startActivity(intent);
     }
 }
