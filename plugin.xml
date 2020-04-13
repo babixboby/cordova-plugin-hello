@@ -21,12 +21,12 @@
     </config-file>
           
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <activity android:label="New Activity" android:name="com.example.plugin.GameActivity"></activity>
+            <activity android:screenOrientation="portrait" android:label="@string/app_name" android:name=".GameActivity"></activity>
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml"></config-file>
         <source-file src="src/android/Hello.java" target-dir="src/com/example/plugin" />
-          <source-file src="src/android/GameActivity.java" target-dir="src/com/example/plugin" />
-          <source-file src="src/android/FlappySurfaceView.java" target-dir="src/com/example/plugin" />
+        <source-file src="src/android/GameActivity.java" target-dir="src/com/example/plugin" />
+        <source-file src="src/android/FlappySurfaceView.java" target-dir="src/com/example/plugin" />
         <source-file src="src/android/NewActivity.java" target-dir="src/com/example/plugin" />
         <source-file src="src/android/activity_new.xml" target-dir="res/layout"/>
   </platform>
