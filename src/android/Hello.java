@@ -2,6 +2,7 @@ package com.example.plugin;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
@@ -16,7 +17,7 @@ public class Hello extends CordovaPlugin {
 
     public static final String EXTRA_IS_SPEED_MODE = "is_speed_mode";
     Resources activityRes = cordova.getActivity().getResources();
-    String packageName = cordova.getActivity().getPackageName();
+    public String packageName = cordova.getActivity().getPackageName();
     
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
         super.initialize(cordova, webView);
