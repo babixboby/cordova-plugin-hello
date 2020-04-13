@@ -120,7 +120,7 @@ public class FlappySurfaceView extends SurfaceView implements Runnable, SurfaceH
         setOnTouchListener(this);
 
         Activity activity = (Activity)mContext;
-        boolean isSpeedMode = activity.getIntent().getBooleanExtra(MainActivity.EXTRA_IS_SPEED_MODE, false);
+        boolean isSpeedMode = activity.getIntent().getBooleanExtra(Hello.EXTRA_IS_SPEED_MODE, false);
         if (isSpeedMode){
             mXSpeed = 20;
             mScoreIncrease = 2;
