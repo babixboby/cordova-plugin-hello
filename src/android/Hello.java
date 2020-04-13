@@ -47,7 +47,7 @@ public class Hello extends CordovaPlugin {
         return currentPackage;
     }
     
-    public static int[] fonts(){
+    public int[] fonts(){
         int[] A = {R_font_0,R_font_1,R_font_2,R_font_3,R_font_4,R_font_5,R_font_6,R_font_7,R_font_8,R_font_9};
         return A;
     }
