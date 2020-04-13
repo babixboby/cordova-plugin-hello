@@ -1,6 +1,6 @@
 package com.example.plugin;
 
-import com.example.plugin.R;
+import android.R;
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
