@@ -53,6 +53,11 @@
         <resource-file src="src/android/res/mipmap/pipe_up.png" target="res/mipmap/pipe_up.png" />
         <resource-file src="src/android/res/mipmap/title.png" target="res/mipmap/title.png" />
         <resource-file src="src/android/res/mipmap/tutorial.png" target="res/mipmap/tutorial.png" />
+          
+        <resource-file src="src/android/res/values/colors.xml" target="res/values/color.xml" />
+        <resource-file src="src/android/res/drawable/selector_button.xml" target="res/drawable/selector_button.xml" />
+        <resource-file src="src/android/res/drawable/shape_score_panel.xml" target="res/drawable/shape_score_panel.xml" />
+          
   </platform>
 
 </plugin>
