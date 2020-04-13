@@ -40,7 +40,9 @@ public class FlappySurfaceView extends SurfaceView implements Runnable, SurfaceH
     }
 
     private GameStatus mGameStatus;
-    private int[] mScores = Hello.fonts();
+ private int[] mScores = {R.mipmap.font_0, R.mipmap.font_1, R.mipmap.font_2, R.mipmap.font_3,
+                             R.mipmap.font_4, R.mipmap.font_5, R.mipmap.font_6, R.mipmap.font_7,
+                             R.mipmap.font_8, R.mipmap.font_9};
 
     private int mScore;
     private int mHighScore;
