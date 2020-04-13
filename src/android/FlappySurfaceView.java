@@ -1,6 +1,6 @@
 package com.example.plugin;
 
-import android.R;
+import com.game.flappybird.R;
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
