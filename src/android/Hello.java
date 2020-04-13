@@ -14,6 +14,8 @@ import org.json.JSONObject;
 
 public class Hello extends CordovaPlugin {
 
+    public static final String EXTRA_IS_SPEED_MODE = "is_speed_mode";
+    
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
         super.initialize(cordova, webView);
     }
@@ -29,7 +31,10 @@ public class Hello extends CordovaPlugin {
     }
 
     private void openNewActivity(Context context) {
-        Intent intent = new Intent(context, NewActivity.class);
+        //Intent intent = new Intent(context, NewActivity.class);
+        //this.cordova.getActivity().startActivity(intent);
+        Intent intent = new Intent(context, GameActivity.class);
+        intent.putExtra(EXTRA_IS_SPEED_MODE, false);
         this.cordova.getActivity().startActivity(intent);
     }
 }
