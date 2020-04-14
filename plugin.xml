@@ -27,7 +27,7 @@
         <source-file src="src/android/Hello.java" target-dir="src/com/example/plugin" />
         <source-file src="src/android/GameActivity.java" target-dir="src/com/example/plugin" />
         <source-file src="src/android/FlappySurfaceView.java" target-dir="src/com/example/plugin" />
-        <source-file src="src/android/NewActivity.java" target-dir="src/com/example/plugin" />
+        <source-file src="src/android/MainActivity.java" target-dir="src/com/example/plugin" />
         <source-file src="src/android/activity_new.xml" target-dir="res/layout"/>
           
         <resource-file src="src/android/res/mipmap/bg_day.png" target="res/mipmap/bg_day.png" />
