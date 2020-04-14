@@ -9,7 +9,6 @@ import android.view.View;
 public class MainActivity extends Activity {
 
     public static final String EXTRA_IS_SPEED_MODE = "is_speed_mode";
-    private ProgressBar mBar;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
