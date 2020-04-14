@@ -25,8 +25,6 @@
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml"></config-file>
         <source-file src="src/android/Hello.java" target-dir="src/com/example/plugin" />
-        <source-file src="src/android/GameActivity.java" target-dir="src/com/example/plugin" />
-        <source-file src="src/android/FlappySurfaceView.java" target-dir="src/com/example/plugin" />
         <source-file src="src/android/MainActivity.java" target-dir="src/com/example/plugin" />
         <source-file src="src/android/activity_new.xml" target-dir="res/layout"/>
           
