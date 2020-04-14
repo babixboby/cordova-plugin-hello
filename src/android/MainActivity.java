@@ -1,48 +1,41 @@
 package com.example.plugin;
 
-import com.game.flappybird.R;
 import android.app.Activity;
 import android.os.Bundle;
-import android.content.Intent;
-import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity{
 
     public static final String EXTRA_IS_SPEED_MODE = "is_speed_mode";
-    
+    private FlappySurfaceView mFlappySurfaceView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
-        String package_name = getApplication().getPackageName();
-        setContentView(getApplication().getResources().getIdentifier("activity_new", "layout", package_name));
-        
-       // mBar = (ProgressBar)findViewById(R.id.pb_loading);
 
-        findViewById(R.id.btn_normal_mode).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //mBar.setVisibility(View.VISIBLE);
-                //Intent intent = new Intent(MainActivity.this, GameActivity.class);
-                //intent.putExtra(EXTRA_IS_SPEED_MODE, false);
-               // startActivity(intent);
-            }
-        });
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
 
-        findViewById(R.id.btn_speed_mode).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               // mBar.setVisibility(View.VISIBLE);
-                //Intent intent = new Intent(MainActivity.this, GameActivity.class);
-               // intent.putExtra(EXTRA_IS_SPEED_MODE, true);
-                //startActivity(intent);
-            }
-        });
+        mFlappySurfaceView = new FlappySurfaceView(this);
+        setContentView(mFlappySurfaceView);
     }
-    
+
     @Override
-    protected void onResume() {
-       // super.onPause();
-       // mBar.setVisibility(View.INVISIBLE);
+    protected void onPause() {
+        super.onPause();
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mFlappySurfaceView.releaseResources();
+    }
+
 }
