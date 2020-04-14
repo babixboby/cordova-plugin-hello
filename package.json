@@ -1,13 +1,11 @@
 {
-  "name": "cordova-plugin-hello",
+  "name": "com.game.flappybird.plugin",
   "version": "0.1.0",
   "description": "A sample for a new cordova plugin",
   "cordova": {
-    "id": "cordova-plugin-hello",
+    "id": "cordova-plugins-flappybird",
     "platforms": [
-      "android",
-      "ios",
-      "wp7"
+      "android"
     ]
   },
   "repository": {
