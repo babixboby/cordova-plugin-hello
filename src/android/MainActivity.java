@@ -1,5 +1,6 @@
 package com.example.plugin;
 
+import com.game.flappybird.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.content.Intent;
