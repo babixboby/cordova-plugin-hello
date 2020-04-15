@@ -226,10 +226,12 @@ public class FlappySurfaceView extends SurfaceView implements Runnable, SurfaceH
     @Override
     public void run() {
         while (mIsRunning){
-            long start = System.currentTimeMillis();
+            //long start = System.currentTimeMillis();
+			long start = System.nanoTime() / 1000000;
             _calc();
             _draw();
-            long end = System.currentTimeMillis();
+            //long end = System.currentTimeMillis();
+			long end = System.nanoTime() / 1000000;
             if (end - start < 50){
                 try {
                     mThread.sleep(50 - (end - start));
