@@ -173,7 +173,7 @@ public class FlappySurfaceView extends SurfaceView implements Runnable, SurfaceH
 
         mLandY = h / 5 * 4;
 
-        mBirdWidth = mViewWidth / 10;
+        mBirdWidth = mViewWidth / 5;
         mBirdHeight = mBirdWidth * 0.7f;
         mBirdWidth2 = mBirdHeight * 1.1f;
         mBirdHeight2 = mBirdWidth;
